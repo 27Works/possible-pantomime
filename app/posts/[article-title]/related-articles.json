@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "HAGERTY RADICAL CUP UK ROUND 2 - BRANDS HATCH POST-RACE REPORT",
+    "subtitle": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo.",
+    "image": "/images/article_thumb_01.jpg"
+  },
+  {
+    "id": 2,
+    "title": "HAGERTY RADICAL CUP UK ROUND 2 - BRANDS HATCH POST-RACE REPORT",
+    "subtitle": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo.",
+    "image": "/images/article_thumb_02.jpg"
+  },
+  {
+    "id": 3,
+    "title": "RADICAL MOTORSPORT REVEALS HOTLY ANTICIPATED SR1 XXR...",
+    "subtitle": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo.",
+    "image": "/images/article_thumb_03.jpg"
+  },
+  {
+    "id": 4,
+    "title": "BOODOOSINGH & T&T LEAD RADICAL CUP CARIBBEAN",
+    "subtitle": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo.",
+    "image": "/images/article_thumb_04.jpg"
+  }
+]
