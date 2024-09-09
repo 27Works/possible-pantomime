@@ -8,7 +8,10 @@
 
 **Cloning the Repository**
 
-
+```bash
+git clone https://github.com/RuiSong1998/coding-task-rui-song.git
+cd coding-task-rui-song
+```
 
 **Installation**
 
