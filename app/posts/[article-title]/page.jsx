@@ -21,6 +21,7 @@ export default async function Page({ params }) {
     title: article?.title,
     subtitle: article?.sections?.[2]?.content,
     bodyText: article?.sections?.[3]?.content,
+    imageGallery: article?.sections?.[4]?.images,
   };
 
   return (

@@ -2,7 +2,14 @@ import Link from "next/link";
 import Image from "next/image";
 import ArticleAuthor from "@/public/images/article_author.jpg";
 
-export const Article = ({ createdAt, author, title, subtitle, bodyText }) => {
+export const Article = ({
+  createdAt,
+  author,
+  title,
+  subtitle,
+  bodyText,
+  imageGallery,
+}) => {
   const getDaySuffix = (day) => {
     if (day >= 11 && day <= 13) {
       return "th";
@@ -33,7 +40,7 @@ export const Article = ({ createdAt, author, title, subtitle, bodyText }) => {
 
   return (
     <article className="container grid grid-cols-12 items-center min-h-screen -mt-12 md:-mt-48 relative mb-14">
-      <div className="col-span-12 col-start-1 md:col-span-10 lg:col-span-8 lg:col-start-2 xl:col-span-7 xl:col-start-3 xl:pr-10 flex flex-col space-y-7">
+      <div className="col-span-12 col-start-1 md:col-span-10 lg:col-span-8 lg:col-start-2 xl:col-span-7 xl:col-start-3 xl:pr-10 flex flex-col gap-y-7">
         <div>
           <div className="flex items-center mb-3 space-x-1 text-sm text-[#F2CB13] font-futura_pt_light">
             <Link
@@ -71,7 +78,7 @@ export const Article = ({ createdAt, author, title, subtitle, bodyText }) => {
               className="object-cover w-10 h-10 rounded-full"
               alt="article author"
             />
-            <div className="flex">
+            <div className="flex font-futura_pt_book">
               <span>{`${author?.firstName || "John"} ${
                 author?.lastName || "Snow"
               }`}</span>
@@ -104,8 +111,21 @@ export const Article = ({ createdAt, author, title, subtitle, bodyText }) => {
         </div>
         <div
           dangerouslySetInnerHTML={createBodyText()}
-          className="flex flex-col gap-y-6"
+          className="flex flex-col gap-y-6 article"
         ></div>
+        <div className="w-full relative flex flex-col gap-y-7">
+          {imageGallery?.map((image) => (
+            <div key={image?.id}>
+              <Image
+                src={image?.url}
+                className="object-cover rounded-lg"
+                width={800}
+                height={500}
+                alt="article image gallery"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </article>
   );

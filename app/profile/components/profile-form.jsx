@@ -98,11 +98,7 @@ export const ProfileForm = ({ dealers }) => {
                 required: true,
               },
             })}
-            className={`text-lg bg-transparent border border-1 rounded-md w-full px-4 py-2.5 ${
-              errors.country
-                ? "border-red-600 focus:border-red-600 focus:ring-red-600"
-                : "border-gray-400 focus:ring-[#F2CB13] focus:border-[#F2CB13]"
-            }`}
+            className="text-lg bg-transparent border border-1 rounded-md w-full px-4 py-2.5 border-gray-400 focus:ring-[#F2CB13] focus:border-[#F2CB13]"
           >
             <option value="Australia" className="bg-[#161616]">
               Australia
@@ -114,18 +110,11 @@ export const ProfileForm = ({ dealers }) => {
               Canada
             </option>
           </select>
-          {errors.country && (
-            <p className="text-base text-red-600">{errors.country?.message}</p>
-          )}
         </div>
         <div>
           <label htmlFor="dealer">Dealer</label>
           <select
-            className={`text-lg bg-transparent border border-1 rounded-md w-full px-4 py-2.5 ${
-              errors.dealer
-                ? "border-red-600 focus:border-red-600 focus:ring-red-600"
-                : "border-gray-400 focus:ring-[#F2CB13] focus:border-[#F2CB13]"
-            }`}
+            className="text-lg bg-transparent border border-1 rounded-md w-full px-4 py-2.5 border-gray-400 focus:ring-[#F2CB13] focus:border-[#F2CB13]"
             {...register("dealer", {
               pattern: {
                 required: true,
@@ -142,9 +131,6 @@ export const ProfileForm = ({ dealers }) => {
               </option>
             ))}
           </select>
-          {errors.dealer && (
-            <p className="text-base text-red-600">{errors.dealer?.message}</p>
-          )}
         </div>
       </div>
       <div className="mb-6 font-futura_pt_book">
@@ -153,11 +139,7 @@ export const ProfileForm = ({ dealers }) => {
           {...register("radical", {
             required: true,
           })}
-          className={`text-lg bg-transparent border border-1 rounded-md w-full px-4 py-2.5 ${
-            errors.radical
-              ? "border-red-600 focus:border-red-600 focus:ring-red-600"
-              : "border-gray-400 focus:ring-[#F2CB13] focus:border-[#F2CB13]"
-          }`}
+          className="text-lg bg-transparent border border-1 rounded-md w-full px-4 py-2.5 border-gray-400 focus:ring-[#F2CB13] focus:border-[#F2CB13]"
         >
           <option value="SR1" className="bg-[#161616]">
             SR1
@@ -169,9 +151,6 @@ export const ProfileForm = ({ dealers }) => {
             SR10
           </option>
         </select>
-        {errors.radical && (
-          <p className="text-base text-red-600">{errors.radical?.message}</p>
-        )}
       </div>
       <div className="grid gap-6 mb-6 grid-cols-2 font-futura_pt_book">
         <div>

@@ -63,7 +63,7 @@ export const Footer = () => {
             </form>
           </div>
         </div>
-        <div className="flex justify-between gap-16 border-t border-white border-opacity-10 py-16">
+        <div className="flex flex-col lg:flex-row justify-between gap-16 border-t border-white border-opacity-10 py-16">
           <div className="flex items-start flex-col gap-y-6 w-[30%]">
             <Image src={RadicalLogo} className="h-10" alt="Radical logo" />
             <p className="text-white">
@@ -81,7 +81,7 @@ export const Footer = () => {
           <div className=" grid grid-cols-5 gap-x-8">
             <div className="flex flex-col gap-y-4">
               <p className="text-[#B1B3B3]">Cars</p>
-              <ul className="flex flex-col gap-y-2 text-lg font-futura_pt_light">
+              <ul className="flex flex-col gap-y-2 text-lg font-futura_pt_book">
                 <li className="hover:text-[#F2CB13] cursor-pointer ease-in-out transition-all duration-300">
                   All cars
                 </li>
@@ -110,7 +110,7 @@ export const Footer = () => {
             </div>
             <ul className="flex flex-col gap-y-4">
               <p className="text-[#B1B3B3]">Company</p>
-              <ul className="flex flex-col gap-y-2 text-lg font-futura_pt_light">
+              <ul className="flex flex-col gap-y-2 text-lg font-futura_pt_book">
                 <li className="hover:text-[#F2CB13] cursor-pointer ease-in-out transition-all duration-300">
                   News
                 </li>
@@ -164,7 +164,7 @@ export const Footer = () => {
             </div>
             <div className="flex flex-col gap-y-4">
               <p className="text-[#B1B3B3]">Social</p>
-              <ul className="flex flex-col gap-y-2 text-lg font-futura_pt_light">
+              <ul className="flex flex-col gap-y-2 text-lg font-futura_pt_book">
                 <li className="hover:text-[#F2CB13] cursor-pointer ease-in-out transition-all duration-300">
                   LinkedIn
                 </li>

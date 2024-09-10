@@ -11,5 +11,7 @@ export const getDealers = async () => {
     throw new Error("Failed to get your dealers");
   }
 
-  return await res.json();
+  const data = await res.json();
+
+  return data;
 };

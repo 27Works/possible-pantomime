@@ -8,7 +8,7 @@ export const Thumbnail = ({ title, subtitle, image }) => (
         <div className="absolute bottom-0 w-full h-20 bg-gradient-to-t from-[#121212]"></div>
       </div>
       <div className="p-5 flex flex-col justify-between">
-        <h5 className="text-lg font-futura_pt_medium tracking-tight text-white">
+        <h5 className="text-lg font-futura_pt_heavy tracking-tight text-white">
           {title}
         </h5>
         <p className="text-base text-[#B1B3B3]">{subtitle}</p>

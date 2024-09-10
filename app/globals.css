@@ -60,7 +60,7 @@ strong {
 }
 
 p {
-  @apply text-[#8C8C8C] font-futura_pt_book text-lg;
+  @apply text-[#B1B3B3] font-futura_pt_book text-lg;
 }
 
 p strong {
@@ -68,5 +68,17 @@ p strong {
 }
 
 p img {
-  @apply w-full h-auto py-4;
+  @apply w-full h-auto py-4 rounded-lg;
+}
+
+.article a {
+  @apply text-white font-futura_pt_medium underline;
+}
+
+.article tbody tr:first-child {
+  @apply hidden;
+}
+
+.article tr {
+  @apply font-futura_pt_light text-[#B1B3B3] border-b border-[#8C8C8C] border-opacity-20;
 }
