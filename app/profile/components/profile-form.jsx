@@ -58,9 +58,6 @@ export const ProfileForm = ({ dealers }) => {
                 value: /^[a-zA-Z]+$/,
                 message: "Please input a valid full name",
               },
-              onBlur: (e) => {
-                console.log(e);
-              },
             })}
             className={`text-lg bg-transparent border border-1 rounded-md w-full px-4 py-2.5 ${
               errors.fullName

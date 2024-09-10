@@ -22,14 +22,10 @@ export const RelatedArticles = () => {
       </div>
       <span className="hidden lg:flex absolute top-0 -end-4 z-30 items-center h-full">
         <svg
-          className="w-8 h-12 cursor-pointer text-[#505050] hover:text-[#F2CB13] transition-all ease-in-out duration-300"
+          className="stroke-[#505050] hover:stroke-[#F2CB13] stroke-[10px] w-8 h-12 cursor-pointer transition-all ease-in-out duration-300"
           viewBox="0 0 32 50"
         >
-          <path
-            d="M4.09187 4.40812L24.6838 25L4.09188 45.5919"
-            stroke="currentColor"
-            strokeWidth="10"
-          />
+          <path d="M4.09187 4.40812L24.6838 25L4.09188 45.5919" />
         </svg>
       </span>
     </div>
